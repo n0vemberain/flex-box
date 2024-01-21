@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parent {
+            display: flex;
+            height: 100vh; /* Set height to full viewport height */
+        }
+
+        .child {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Set different background colors for better visibility */
+        .child:nth-child(1) {
+            background-color: #3498db; /* Blue */
+            flex-grow: 1; /* Takes up more space (2x) compared to other flex items */
+        }
+
+        .child:nth-child(2) {
+            background-color: #2ecc71; /* Green */
+            flex-grow: 2; /* Default value, takes up equal space */
+        }
+
+        .child:nth-child(3) {
+            background-color: #e74c3c; /* Red */
+            flex-grow: 3; /* Default value, takes up equal space */
+        }
+        .child:nth-child(4) {
+            background-color: #a0e73c; /* Red */
+            flex-grow: 4; /* Default value, takes up equal space */
+        }
+        .child:nth-child(5) {
+            background-color: #3c9ae7; /* Red */
+            flex-grow: 5; /* Default value, takes up equal space */
+        }
+        .child:nth-child(6) {
+            background-color: #e73c6d; /* Red */
+            flex-grow: 6; /* Default value, takes up equal space */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 3</div>
+    </div>
+</body>
+</html>
